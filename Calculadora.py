@@ -66,18 +66,17 @@ def calcular_resultado():
 def alternar_sinal():
     global valor_atual
     if valor_atual:
-        # Alterna o sinal do valor atual
         if valor_atual.startswith('-'):
-            valor_atual = valor_atual[1:]  # Remove o sinal de menos
+            valor_atual = valor_atual[1:]
         else:
-            valor_atual = '-' + valor_atual  # Adiciona o sinal de menos
+            valor_atual = '-' + valor_atual
         display.configure(text=valor_atual)
 
 def apagarnum():
     global valor_atual
     if valor_atual:
-        valor_atual = valor_atual[:-1]  # Remove o último caractere
-        display.configure(text=valor_atual)  # Atualiza o Label
+        valor_atual = valor_atual[:-1]
+        display.configure(text=valor_atual)
 
 def apagartudo():
     global valor_atual, valor_anterior, operacao
@@ -90,6 +89,41 @@ def apagarentrada():
     global valor_atual
     valor_atual = ""
     display.configure(text="") 
+
+def virgulaa():
+    global valor_atual
+    if '.' not in valor_atual:
+        if valor_atual == "":
+            valor_atual = "0."
+        else:
+            valor_atual += "."
+        display.configure(text=valor_atual)
+
+def calcular_inverso():
+    global valor_atual
+    try:
+        valor_atual = str(1 / float(valor_atual))
+        display.configure(text=valor_atual)
+    except ZeroDivisionError:
+        display.configure(text="Erro")
+    except ValueError:
+        display.configure(text="Erro")
+
+def calcular_quadrado():
+    global valor_atual
+    try:
+        valor_atual = str(float(valor_atual) ** 2)
+        display.configure(text=valor_atual)
+    except ValueError:
+        display.configure(text="Erro")
+
+def calcular_raiz_quadrada():
+    global valor_atual
+    try:
+        valor_atual = str(float(valor_atual) ** 0.5)
+        display.configure(text=valor_atual)
+    except ValueError:
+        display.configure(text="Erro")
 
 def open_video():
     video_path = "muehehehe.mp4"
@@ -144,19 +178,19 @@ c.place(x=165, y=200)
 fundbutt = ctk.CTkFrame(app, height=50, width=70, fg_color='black')
 fundbutt.place(x=5, y=257)
 
-umbarrax = ctk.CTkButton(app, height=50, width=70, text='1/x', fg_color='dimgray', corner_radius=0)
+umbarrax = ctk.CTkButton(app, height=50, width=70, text='1/x', fg_color='dimgray', corner_radius=0, command=calcular_inverso)
 umbarrax.place(x=5, y=255)
 
 fundbutt = ctk.CTkFrame(app, height=50, width=70, fg_color='black')
 fundbutt.place(x=85, y=257)
 
-xdois = ctk.CTkButton(app, height=50, width=70, text='x²', fg_color='dimgray', corner_radius=0)
+xdois = ctk.CTkButton(app, height=50, width=70, text='x²', fg_color='dimgray', corner_radius=0, command=calcular_quadrado)
 xdois.place(x=85, y=255)
 
 fundbutt = ctk.CTkFrame(app, height=50, width=70, fg_color='black')
 fundbutt.place(x=165, y=257)
 
-doisvx = ctk.CTkButton(app, height=50, width=70, text='²√x', fg_color='dimgray', corner_radius=0)
+doisvx = ctk.CTkButton(app, height=50, width=70, text='²√x', fg_color='dimgray', corner_radius=0, command=calcular_raiz_quadrada)
 doisvx.place(x=165, y=255)
 
 fundbutt = ctk.CTkFrame(app, height=50, width=70, fg_color='black')
@@ -252,7 +286,7 @@ zero.place(x=85, y=475)
 fundbutt = ctk.CTkFrame(app, height=50, width=70, fg_color='black')
 fundbutt.place(x=165, y=477)
 
-virgula = ctk.CTkButton(app, height=50, width=70, text=',', fg_color='gray', corner_radius=0)
+virgula = ctk.CTkButton(app, height=50, width=70, text=',', fg_color='gray', corner_radius=0, command=virgulaa)
 virgula.place(x=165, y=475)
 
 fundbutt = ctk.CTkFrame(app, height=50, width=70, fg_color='black')
