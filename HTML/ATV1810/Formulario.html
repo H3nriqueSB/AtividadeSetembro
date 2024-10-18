@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./page.php">
+
+        <fieldset><legend>Busca</legend>
+        <label for="pesquisa">pesquisa</label>
+        <input type="search" id="pesquisa" name="pesquisa" placeholder="Buscar..."><br>
+        </fieldset>
+
+        <fieldset><legend>Cadastro</legend>
+
+            <label for="fname">Primeiro nome</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Name" maxlength="8" size="10"><br>
+
+        </fieldset>
+
+        <fieldset><legend>Cadastro</legend>
+
+            <label for="lname">Ultimo nome</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Sobrenome" maxlength="15">
+
+        </fieldset>
+
+        <fieldset><legend>Email</legend>
+        <p>Email: <input type="email" id="email" name="email" size="20" maxlength="30" placeholder="exemplo@gmail.com"></p>
+        </fieldset>
+
+        <fieldset><legend>Senha</legend>
+        <p>Senha: <input type="password" id="senha" name="senha" size="20" maxlength="10" placeholder="abc@123"></p> 
+        </fieldset>
+
+        <fieldset><legend>Telefone</legend>
+        <label for="telefone">telefone</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+        </fieldset>
+
+        <fieldset><legend>Data de Nascimento</legend>
+        <p>Data de Nascimento: <input type="date" id="date" name="date" size="20" maxlength="10" placeholder="00-00-0000"></p>
+        </fieldset>
+
+        <fieldset><legend>Idade</legend>
+        <label for="Idade">Idade: </label>
+        <input type="number" id="idade" name="idade" min="0" max="500"><br>
+        </fieldset>
+
+        <fieldset><legend>Hora Feia</legend>
+        <label for="hora">Horário de Atendimento</label>
+        <input type="time" id="hora" name="hora">
+        </fieldset>
+
+        <fieldset><legend>Data Hora Feia</legend>
+        <label for="datahora">Data e Hora</label>
+        <input type="datetime-local" id="datahora" name="datahora">
+        </fieldset>
+
+        <fieldset><legend>País</legend>
+        <label for="pais">País</label>
+        <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estadaos Unidos</option>
+            <option value="japao">Japão</option>
+        </select>
+        </fieldset>
+
+        <fieldset><legend>Linguagem</legend>
+        <p>Qual sua liguagem favorita?</p>
+            <input type="radio" id="html" name="fav_languege" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="html" name="fav_languege" value="CSS">
+            <label for="html">CSS</label><br>
+            <input type="radio" id="html" name="fav_languege" value="javascript">
+            <label for="html">JavaScript</label><br>
+        </fieldset>
+
+        <fieldset><legend>CheckBox</legend>
+            <input type="checkbox" id="html" name="fav_languege" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="fav_languege" value="css">
+            <label for="html">CSS</label><br>
+            <input type="checkbox" id="JavaScript" name="fav_languege" value="javascript">
+            <label for="html">JavaScript</label><br>
+        </fieldset>
+
+        <fieldset><legend>Color</legend>
+        <label for="cor">Escolha uma Cor</label>
+        <input type="color" id="cor" name="cor">
+        </fieldset>
+
+        <fieldset><legend>Arquivos</legend>
+        <label for="arquivo">Carregar Arquivo: </label>
+        <input type="file" id="arquivo" name="arquivo">
+        </fieldset>
+
+        <fieldset>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Resetar</button>
+        </fieldset>
+
+        <fieldset>
+        <label for="story">Area de Texto</label>
+        <textarea id="story" name="story" rows="5" cols="33">Bunda</textarea>
+        </fieldset>
+
+    </form>
+</body>
+</html>
