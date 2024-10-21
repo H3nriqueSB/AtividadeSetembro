@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(to right, lightpink, powderblue) ;
+    box-sizing: border-box; width: 1000px; height: 100px;
+    display: block;
+    #but1 {color: blueviolet;}
+    #parag2 {color: crimson;}
+    .paragrafo {color: crimson;
+                font-size: 50px; 
+                font-family: 'Comic Sans MS'; 
+                font-weight: bold; 
+                font-style: italic; 
+                line-height: 60px; 
+                border-radius: 40%; 
+                border-color: aqua; 
+                border-style: solid; 
+                border: 1;}
+}
