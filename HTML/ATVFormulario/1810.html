@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="send.php">
+
+        <fieldset><legend>Dados Pessoais</legend>
+            <label for="fname">Primeiro Nome</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Digite Aqui..."><br>
+            <label for="midname">Nome do meio</label><br>
+            <input type="text" id="mname" name="mname" placeholder="Digite Aqui..."><br>
+            <label for="sname">Sobrenome</label><br>
+            <input type="text" id="sname" name="sname" placeholder="Digite Aqui..."><br>
+            <br>
+            <label for="apelido">Apelido</label><br>
+            <input type="text" id="apelido" name="apelido" placeholder="Digite Aqui..."><br>
+            <label for="nomes">Nome Social</label><br>
+            <input type="text" id="nomes" name="nomes" placeholder="Digite Aqui..."><br>
+            <br>
+            <label for="idade">Idade</label><br>
+            <input type="number" id="idade" name="idade" placeholder="Digite Aqui..."><br>
+            <label for="cpf">CPF</label><br>
+            <input type="text" id="cpf" name="cpf" required maxlength="11" placeholder="XXX.XXX.XXX-XX"><br>
+        </fieldset>
+
+        <fieldset><legend>Endereço</legend>
+            <label for="países">País</label><br>
+            <select id="país" name="país">
+                <option value="brasil">Brasil</option>
+                <option value="japao">Japão</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+            </select><br>
+            <label for="rua">Rua</label><br>
+            <input type="text" id="rua" name="rua" placeholder="Digite Aqui..."><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite Aqui..."><br>
+            <label for="tip_resi">Tipo de Residencia</label><br>
+            <select id="resi" name="resi">
+                <option value="casa">Casa</option>
+                <option value="apto">Apartamento</option>
+                <option value="cond">Condominio</option>
+            </select><br>
+            <label for="numcasa">Número</label><br>
+            <input type="number" id="number" name="number" placeholder="Digite Aqui..."><br>
+        </fieldset>
+
+        <fieldset><legend>Dados Financeiros</legend>
+            <label for="renda">Renda Mensal</label><br>
+            <input type="number" id="renda" name="renda" placeholder="Digite Aqui..." required><br>
+            <label for="despesa">Despesa Mensal</label><br>
+            <input type="number" id="despesa" name="despesa" placeholder="Digite Aqui..."><br>
+            <label for="saldo">Saldo</label><br>
+            <input type="number" id="saldo" name="saldo" placeholder="Digite Aqui..."><br>
+            <label for="lucro">Lucro</label><br>
+            <input type="number" id="lucro" name="lucro" placeholder="Digite Aqui..."><br>
+            <label for="divida">Divida</label><br>
+            <input type="number" id="divida" name="divida" placeholder="Digite Aqui..."><br>
+        </fieldset>
+
+        <fieldset><legend>Dados Comerciais</legend>
+            <label for="venda">Vendas Totais</label><br>
+            <input type="number" id="venda" name="venda" placeholder="Digite Aqui..."><br>
+            <label for="fatudia">Faturamento Diario</label><br>
+            <input type="number" id="fatudia" name="fatudia" placeholder=" Digite Aqui..."><br>
+            <label for="fatumens">Faturamento Mensal</label><br>
+            <input type="number" id="fatumens" name="fatumens" placeholder="Digite Aqui..."><br>
+            <label for="fatuano">Faturamento Anual</label><br>
+            <input type="number" id="fatuano" name="fatuano" placeholder="Digite Aqui..."><br>
+            <label for="dividaloja">Dividas</label><br>
+            <input type="number" id="divida_2" name="divida_2" placeholder="Digite Aqui..."><br>
+        </fieldset>
+
+        <fieldset><legend>Cadastro de Veículo</legend>
+            <label for="marca">Marca</label><br>
+            <input type="text" id="marca" name="marca" placeholder="Digite Aqui..."><br>
+            <label for="modelo">Modelo</label><br>
+            <input type="text" id="modelo" name="modelo" placeholder="Digite Aqui..."><br>
+            <label for="anoveic">Ano</label><br>
+            <input type="number" id="anoveic" name="anoveic" placeholder="Digite Aqui..."><br>
+            <label for="combus">Tipo de Combustivel</label><br>
+            <select id="combus" name="combus">
+                <option value="gasol">Gasolina</option>
+                <option value="gas">Gás</option>
+                <option value="diesel">Diésel</option>
+                <option value="etanol">Etanol</option>
+            </select><br>
+            <label for="veicolor">Cor</label><br>
+            <input type="color" id="veicolor" name="veicolor" placeholder="Digite Aqui..."><br>
+        </fieldset>
+
+        <fieldset><legend>Cadastro de Imóvel</legend>
+            <label for="propname">Nome do Proprietário</label><br>
+            <input type="text" id="propname" name="propname" placeholder="Digite Aqui..."><br>
+            <label for="imovel">Tipo de Imóvel</label><br>
+            <select id="imovel" name="imovel">
+                <option value="casa2">Casa</option>
+                <option value="apto2">Apartamento</option>
+                <option value="terren">Terreno</option>
+            </select><br>
+            <label for="numquart">Número de Quartos</label><br>
+            <input type="number" id="numquart" name="numquart" placeholder="Digite Aqui..."><br>
+            <label for="numban">Número de Banheiros</label><br>
+            <input type="number" id="numban" name="numban" placeholder="Digite Aqui..."><br>
+            <label for="garagem">Garagem</label><br>
+            <select id="garagem">
+                <option value="s">Sim</option>
+                <option value="n">Não</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset><legend>Dados Conjuge</legend>
+            <label for="fname2">Primeiro Nome</label><br>
+            <input type="text" id="fname2" name="fname2" placeholder="Digite Aqui..."><br>
+            <label for="midname2">Nome do meio</label><br>
+            <input type="text" id="mname2" name="mname2" placeholder="Digite Aqui..."><br>
+            <label for="sname2">Sobrenome</label><br>
+            <input type="text" id="sname2" name="sname2" placeholder="Digite Aqui..."><br>
+            <br>
+            <label for="apelido2">Apelido</label><br>
+            <input type="text" id="apelido2" name="apelido2" placeholder="Digite Aqui..."><br>
+            <label for="nomes2">Nome Social</label><br>
+            <input type="text" id="nomes2" name="nomes2" placeholder="Digite Aqui..."><br>
+            <br>
+            <label for="idade2">Idade</label><br>
+            <input type="number" id="idade2" name="idade2" placeholder="Digite Aqui..."><br>
+            <label for="cpf2">CPF</label><br>
+            <input type="text" id="cpf2" name="cpf2" required maxlength="11" placeholder="XXX.XXX.XXX-XX"><br>
+        </fieldset>
+
+        <fieldset><legend>Dados Filho(a)</legend>
+            <label for="fname3">Primeiro Nome</label><br>
+            <input type="text" id="fname3" name="fname3" placeholder="Digite Aqui..."><br>
+            <label for="midname3">Nome do meio</label><br>
+            <input type="text" id="mname3" name="mname3" placeholder="Digite Aqui..."><br>
+            <label for="sname3">Sobrenome</label><br>
+            <input type="text" id="sname3" name="sname3" placeholder="Digite Aqui..."><br>
+            <br>
+            <label for="apelido3">Apelido</label><br>
+            <input type="text" id="apelido3" name="apelido3" placeholder="Digite Aqui..."><br>
+            <label for="nomes">Nome Social</label><br>
+            <input type="text" id="nomes3" name="nomes3" placeholder="Digite Aqui..."><br>
+            <br>
+            <label for="idade3">Idade</label><br>
+            <input type="number" id="idade3" name="idade3" placeholder="Digite Aqui..."><br>
+            <label for="cpf3">CPF</label><br>
+            <input type="text" id="cpf3" name="cpf3" required maxlength="11" placeholder="XXX.XXX.XXX-XX"><br>
+        </fieldset>
+
+        <fieldset><legend>Formação Escolar</legend>
+            <label for="instname">Nome da Instituição</label><br>
+            <input type="text" id="instname" name="instname" placeholder="Digite Aqui..."><br>
+            <br>
+                <label for="escol">Escolaridade</label><br>
+                    <input type="checkbox" id="escol" name="escol" value="funda">
+                        <label for="funda">Fundamental</label>
+                    <input type="checkbox" id="escol" name="escol" value="medio">
+                        <label for="medio">Médio</label>
+                    <input type="checkbox" id="escol" name="escol" value="sup">
+                        <label for="sup">Superior</label><br>
+                        <br>
+                <label for="datainic">Data de ínicio</label><br>
+                <input type="date" name="datainic" id="datainic"><br>
+                <label for="dataconclu">Data de Conclusão</label><br>
+                <input type="date" name="dataconclu" id="dataconclu"><br>
+                <br>
+                <label for="certif">Boletim/Certficado</label><br>
+                <input type="file" id="certif" name="certif">
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar Formulario</button>
+        </fieldset>
+    </form>
+</body>
+</html>
