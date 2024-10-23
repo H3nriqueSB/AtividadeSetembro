@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(to top, powderblue, white) ;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    display: block;
+}
+
+.container2{
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contA img{
+    display: block;
+    margin: 0%;
+    padding: 0%;
+    margin: 40px 40px 0px 45px;
+    border-radius: 10% 10% 0% 0%;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.texto{
+    text-align: justify;
+    position: absolute;
+    display: block;
+    border: 1;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-color: black;
+    border-radius: 0% 0% 10% 10%;
+    width: 285px;
+    font-size: 25px;
+    margin: 0px 40px 0px 45px;
+    padding: 10px;
+}
+
+#um{
+    background-color: blue;
+    color: lightgreen;
+}
+
+#dois{
+    background-color: powderblue;
+    color: red;
+}
+
+#tres{
+    background-color: aquamarine;
+    color: green;
+}
+
+#quatro{
+    background-color: orangered;
+    color: aqua;
+}
+
+#cinco{
+    background-color: brown;
+    color: gray;
+}
