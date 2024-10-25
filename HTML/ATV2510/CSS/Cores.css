@@ -1,0 +1,40 @@
+nav{
+    background-color: blueviolet;
+    height: 50px;
+}
+nav:hover{
+    background-color: palevioletred;
+}
+nav:active{
+    background-color: pink;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: crimson;
+    padding: 10px;
+    column-gap: 50px;
+    row-gap: 100px; /*Gap é espaçamento*/
+}
+
+.grid-item {
+    background-color: mediumslateblue;
+    border: 1px;
+    border-color: cornflowerblue;
+    border-style: solid;
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+.item8 {
+    grid-area: 2 / 2 / 4 / 4;
+}
