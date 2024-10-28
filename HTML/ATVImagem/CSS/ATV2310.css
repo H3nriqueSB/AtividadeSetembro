@@ -1,62 +1,92 @@
 body {
-    background: linear-gradient(to top, powderblue, white) ;
-    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../IMG/space.jfif");
     box-sizing: border-box;
-    display: block;
 }
 
-.container2{
-    display: inline-block;
-    margin: 0%;
-    padding: 0%;
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 0; 
 }
 
-.contA img{
-    display: block;
-    margin: 0%;
-    padding: 0%;
-    margin: 40px 40px 0px 45px;
-    border-radius: 10% 10% 0% 0%;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7);
+#Busc {
+    background-color: black;
+    border: 1px solid grey;
+    height: 30px;    
+    margin-left: 10px;
 }
 
-.texto{
-    text-align: justify;
-    position: absolute;
-    display: block;
-    border: 1;
-    box-sizing: border-box;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.7);
-    border-style: solid;
-    border-color: black;
-    border-radius: 0% 0% 10% 10%;
-    width: 285px;
-    font-size: 25px;
-    margin: 0px 40px 0px 45px;
-    padding: 10px;
+.logo {
+    position: absolute; 
+}
+.logo img {
+    height: 70px;
 }
 
-#um{
-    background-color: blue;
-    color: lightgreen;
+.exp ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.exp li a {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+.exp li a:hover {
+    color: crimson; 
 }
 
-#dois{
-    background-color: powderblue;
-    color: red;
+nav {
+    margin-left: auto; /* Faz o nav se alinhar à direita */
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: crimson;
 }
 
-#tres{
-    background-color: aquamarine;
-    color: green;
+.container {
+    position: relative;
+    margin-top: 100px; /* Margem superior para o container */
+    width: 500px; /* Define a largura do container */
+    margin-left: auto; /* Centraliza o container */
+    margin-right: auto; /* Centraliza o container */
 }
 
-#quatro{
-    background-color: orangered;
-    color: aqua;
+.Image {
+    position: relative; /* Para que o texto se posicione em relação a esta div */
+    border-radius: 20px 20px 0 0;
+    overflow: hidden; /* Para garantir que a borda arredondada funcione */
 }
 
-#cinco{
-    background-color: brown;
-    color: gray;
+.Image img {
+    width: 100%; /* Imagem ocupa 100% da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.text {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    bottom: 0; /* Alinha o texto na parte inferior da imagem */
+    left: 0; /* Alinha o texto à esquerda */
+    right: 0; /* Alinha o texto à direita */
+    background-color: rgba(0, 0, 139, 0.5); /* Cor de fundo com opacidade */
+    padding: 10px; /* Adiciona espaçamento ao texto */
 }

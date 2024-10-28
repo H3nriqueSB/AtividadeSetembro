@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../IMG/space.jpg");
+    background-image: url("../IMG/space.jfif");
+    box-sizing: border-box;
 }
 
 header {
@@ -10,37 +11,116 @@ header {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    padding: 25px 0; 
+    padding: 20px 0; 
+}
+
+#Busc {
+    background-color: black;
+    border: 1px solid grey;
+    height: 30px;    
+    margin-left: 10px;
+}
 
 .logo {
     position: absolute; 
 }
-
 .logo img {
-    height: 50px;
+    height: 70px;
+}
+
+.exp ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.exp li a {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+.exp li a:hover {
+    color: crimson; 
 }
 
 nav {
-    margin-left: 1530px;
+    margin-left: 1300px; 
 }
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-
 nav ul li {
     margin-left: 20px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
-
 nav ul li a:hover {
-    color: #ff0040;
+    color: crimson;
+}
+
+.container {
+    position: relative;
+    margin-top: 100px;
+    width: 500px;
+    margin-left: 1300px; 
+    margin-right: auto; 
+    border: 1px solid white; 
+    border-radius: 20px 20px 0 0;   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.Image {
+    border-radius: 20px 20px 0 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);    
+    overflow: hidden; /* Para garantir que a borda arredondada funcione */
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza a transformação e a sombra */
+    text-align: center;
+}
+.Image:hover {
+    transform: translate(10px, -10px); /* Move a carta ao passar o mouse */
+    box-shadow: 0 0 20px crimson; /* Brilho dourado */
+    cursor: pointer;
+}
+.Image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text {
+    background-color: lightgray;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 0; 
+}
+
+.but {
+    display: flex;
+}
+#but1 {
+    display: inline-block;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    margin-left: 1300px;
+    transition: 0.3s;
+}
+#but2 {
+    display: inline-block;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    margin-left: 447px;
+    transition: 0.3s;
+}
+#but1:hover, #but2:hover {
+    color: crimson;
 }
