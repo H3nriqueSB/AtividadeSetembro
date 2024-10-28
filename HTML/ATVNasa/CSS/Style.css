@@ -2,7 +2,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url("../IMG/space.jfif");
+    background-color: #04003D;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: border-box;
+    height: 400px;
 }
 
 header {
@@ -63,64 +67,61 @@ nav ul li a:hover {
     color: crimson;
 }
 
-.container {
-    position: relative;
-    margin-top: 100px;
-    width: 500px;
-    margin-left: 1300px; 
-    margin-right: auto; 
-    border: 1px solid white; 
-    border-radius: 20px 20px 0 0;   
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.artigo {
+    display: block;
+    margin-top: 1000px;
+    margin-left: 200px;
 }
-.Image {
-    border-radius: 20px 20px 0 0;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);    
-    overflow: hidden; /* Para garantir que a borda arredondada funcione */
-    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza a transformação e a sombra */
+.container {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 300px 300px ;
+    background-color: darkslateblue;
+    width: 1450px;
+    padding: 30px;
+    column-gap: 50px;
+    row-gap: 100px; /*Gap é espaçamento*/
+}
+.grid {
+    background-color: mediumslateblue;
+    border: 1px;
+    border-color: cornflowerblue;
+    border-style: solid;
+    color: black;
+    padding: 0;
+    font-size: 30px;
     text-align: center;
 }
-.Image:hover {
-    transform: translate(10px, -10px); /* Move a carta ao passar o mouse */
-    box-shadow: 0 0 20px crimson; /* Brilho dourado */
-    cursor: pointer;
-}
-.Image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.text {
-    background-color: lightgray;
-    border-style: solid;
-    padding: 10px;
-    margin-top: 0; 
+.grid1 {
+    grid-area: 1 / 1 / 6 / 2;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
-.but {
-    display: flex;
+.grid2 {
+    grid-area: 1 / 1 / 4 / 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    gap: 100px;
+    padding: 0;
 }
-#but1 {
-    display: inline-block;
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
-    margin-left: 1300px;
-    transition: 0.3s;
+.grid3 {
+    grid-area: 2 / 2 / 3 / 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
 }
-#but2 {
-    display: inline-block;
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
-    margin-left: 447px;
-    transition: 0.3s;
+.grid4 {
+    grid-area: 3 / 3 / 6 / 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
 }
-#but1:hover, #but2:hover {
-    color: crimson;
+
+.sombra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, black, transparent);
+    z-index: 1;
 }
