@@ -3,10 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background-image: url("../IMG/space.jfif");
     background-color: #04003D;
-    background-size: cover;
+    background-size: 100% 1100px ;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    height: 400px;
 }
 
 header {
@@ -77,12 +76,16 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: auto 300px 300px ;
     background-color: darkslateblue;
+    border-style: solid;
+    border-color: white;
     width: 1450px;
     padding: 30px;
     column-gap: 50px;
     row-gap: 100px; /*Gap é espaçamento*/
 }
 .grid {
+    overflow: hidden; 
+    position: relative;
     background-color: mediumslateblue;
     border: 1px;
     border-color: cornflowerblue;
@@ -92,20 +95,26 @@ nav ul li a:hover {
     font-size: 30px;
     text-align: center;
 }
+
 .grid1 {
     grid-area: 1 / 1 / 6 / 2;
     grid-column-start: 1;
     grid-row-start: 1;
+    
 }
 
-.grid2 {
+.grid2 { 
+    display: block;
     grid-area: 1 / 1 / 4 / 2;
     grid-column-start: 2;
     grid-row-start: 1;
     gap: 100px;
     padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
 }
 .grid3 {
+    display: block;
     grid-area: 2 / 2 / 3 / 2;
     grid-column-start: 2;
     grid-row-start: 6;
@@ -118,10 +127,30 @@ nav ul li a:hover {
 
 .sombra {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; 
+    left: 0; 
     right: 0;
-    bottom: 0;
-    background: linear-gradient(to right, black, transparent);
-    z-index: 1;
+    bottom: 0; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+.overlay_text {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    bottom: 30px;
+    left: 10px;
+
+}
+.overlay_text2 {
+    
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    bottom: 30px;
+    left: 10px;
+
 }
