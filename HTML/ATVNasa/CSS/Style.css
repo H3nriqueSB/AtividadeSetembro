@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url("../IMG/space.jfif");
     background-color: #04003D;
-    background-size: 100% 1100px ;
+    background-size: 100% 1100px;
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -29,20 +29,6 @@ header {
 }
 .logo img {
     height: 70px;
-}
-
-.exp ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.exp li a {
-    color: white;
-    text-decoration: none; 
-    transition: color 0.3s; 
-}
-.exp li a:hover {
-    color: crimson; 
 }
 
 nav {
@@ -84,23 +70,19 @@ nav ul li a:hover {
     row-gap: 100px; /*Gap é espaçamento*/
 }
 .grid {
-    overflow: hidden; 
     position: relative;
-    background-color: mediumslateblue;
     border: 1px;
     border-color: cornflowerblue;
     border-style: solid;
     color: black;
+    cursor: pointer;
     padding: 0;
-    font-size: 30px;
-    text-align: center;
 }
 
 .grid1 {
     grid-area: 1 / 1 / 6 / 2;
     grid-column-start: 1;
     grid-row-start: 1;
-    
 }
 
 .grid2 { 
@@ -131,26 +113,22 @@ nav ul li a:hover {
     left: 0; 
     right: 0;
     bottom: 0; 
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    z-index: 10;
 }
 
 .overlay_text {
+    position: absolute;
     font-size: 30px;
     color: white;
-    position: absolute;
-    z-index: 100;
     bottom: 30px;
     left: 10px;
-
-}
-.overlay_text2 {
-    
     text-align: left;
-    font-size: 15px;
-    color: white;
-    position: absolute;
-    z-index: 100;
-    bottom: 30px;
-    left: 10px;
+    z-index: 100;    
+}
 
+.container2 {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
 }
