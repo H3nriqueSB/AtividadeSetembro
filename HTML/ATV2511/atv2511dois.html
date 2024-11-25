@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ATV2511/CSS/style.css">
+    <script src="atv2511.js"></script>
+    <style>
+        .span-required{
+            display: none;
+            font-size: 12;
+            border: 12px black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <input id="inputNome" type="password" class="input required" oninput="nameValidate()">
+            <input id="inputNome" type="password" class="input required" oninput="nameValidate()">
+            <span class="span-required">As senhas precisam ser iguais</span>
+        </div>
+</form>
+
+
+<script>
+    function passwordValidate2(){
+        if (inputs[1].value.length>=8&&inputs[0].value==inputs[1].value){
+        removeError(1);}
+        else{
+            setError(1); }}
+
+        function setError(index){
+            spans[index].style.display= 'block';
+            spans[index].style.color= 'red'
+        }
+        function removeError(index){
+            spans[index].style.display='none';
+        }
+
+</script>   
+
+
+</body>
+</html>

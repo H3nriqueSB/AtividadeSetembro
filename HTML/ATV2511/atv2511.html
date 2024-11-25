@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ATV2511/CSS/style.css">
+    <script src="atv2511.js"></script>
+    <style>
+        .span-required{
+            display: none;
+            font-size: 12;
+            border: 12px black;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    
+   
+    
+
+    <form action="">
+        <div>
+            <input id="inputNome" type="text" placeholder="digite seu nome" class="input required" oninput="nameValidate()">
+            <span class="span-required">O nome deve ter 3 caracteres</span>
+        </div>
+</form>
+
+
+<script>
+    const inputs = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+
+    function nameValidate() {
+        if (inputs[0].value.length < 3) {
+            setError(0);
+        } else {
+            console.log('Validado com sucesso');
+            spans[0].style.display = 'none';
+        }
+    }
+
+    function setError(index) {
+        spans[index].style.display = 'block';
+        spans[index].style.color = 'red';
+    }
+</script>   
+
+
+</body>
+</html>
