@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="input1" placeholder="Digite o número" oninput="validateInput()" maxlength="15">
+        <span id="error" style="display:none; color: crimson;">Formato inválido! Exemplo: 0000000-00.0000</span>
+        <br>
+        <br>
+        <input type="text" id="input2" placeholder="Digite o número" oninput="validateInput2()" maxlength="4">
+        <span id="error2" style="display:none; color: crimson;">Formato inválido! Exemplo: 0000</span>
+    </div>
+
+    <script>
+        function validateInput() {
+            const input = document.getElementById('input1').value;
+            const regex = /^\d{7}-\d{2}\.\d{4,15}$/;
+            const errorSpan = document.getElementById('error');
+
+            if (regex.test(input)) {
+                errorSpan.style.display = 'none';
+            } else {
+                errorSpan.style.display = 'block';
+            }
+        }
+        function validateInput2() {
+            const input = document.getElementById('input2').value;
+            const regex = /^\d{4}$/;
+            const errorSpan = document.getElementById('error2');
+
+            if (regex.test(input)) {
+                errorSpan.style.display = 'none';
+            } else {
+                errorSpan.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
